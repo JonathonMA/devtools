@@ -28,4 +28,6 @@ RSpec.configure do |config|
   config.expect_with :rspec do |expect_with|
     expect_with.syntax = :expect
   end
+
+  config.warnings = ENV['RSPEC_WARNINGS'] == 'true'
 end
